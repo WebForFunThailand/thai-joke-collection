@@ -1,4 +1,4 @@
-## Begin Your Open-Source journey
+## Thai Joke Collection
 
 #### อ่านตอนจบงานนะครับเพราะเรื่องมันยาวมาก
 
