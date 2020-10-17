@@ -1,6 +1,6 @@
 ### Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. (TODO: Translate)
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
 > Repository นี้ถูกสร้างขึ้นมาสำหรับคนที่เข้าร่วม Workshop "Begin your Open-source Journey" ในกิจกรรม Hacktoberfest Thailand 2020 ที่จัดขึ้นในวันที่ 17 Oct 2020
 
@@ -10,7 +10,9 @@ When contributing to this repository, please first discuss the change you wish t
 2. Fork ตัว Repository ไปอยู่บน Github User ของคุณ
 3. ทำการสร้าง Branch ใหม่ขึ้นมาโดยตั้งชื่อให้สื่อความหมาย
 4. Code and Edit
-5. สร้าง Pull Request พร้อมคำอธิบาย + ภาพประกอบ (ถ้ามี)
+5. สร้าง Pull Request โดยที่ target = master
+6. เพิ่มคำอธิบาย + ภาพประกอบ (ถ้ามี)
+7. create pull request
 
 ### Code of conduct
 
@@ -33,11 +35,13 @@ When contributing to this repository, please first discuss the change you wish t
 
 - เพิ่มปุ่มใหม่สีรุ้ง (พร้อมภาพประกอบ)
 - แก้คำผิด
+- การตั้งชื่อ: เพิ่มมุกตลกใหม่ ไฉไลกว่าเดิม
 
 ##### ตัวอย่าง Pull Request ที่ไม่ดี
 
 - ใช้คำที่เกี่ยวกับเรื่อง sexual harrassment
 - ใช้คำพูดที่ไม่ดี
+- การตั้งชื่อ: มุกค\*ย
 
 ##### หน้าที่ของคนเป็น maintainer
 
