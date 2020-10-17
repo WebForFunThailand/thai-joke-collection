@@ -14,185 +14,67 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
 
     <style>
-      body,
-      html {
-        color: #2c3e50;
-        background-color: #f1f2f6;
+      body {
+		background: url(https://ak.picdn.net/shutterstock/videos/1011355004/thumb/1.jpg);
+      }
+      .banner {
+		color: white;
+		padding-top: 100px;
+		padding-bottom: 70px;
+		text-align: center;
+      }
+      .banner h1 {
+      	font-family: 'Press Start 2P';
+      	animation: changeColor 2s ease-in-out infinite;
+      }
+      .banner p {
+      	font-size: 1.2rem;
+      	margin-top: 20px;
+      	font-family: 'Chakra Petch', sans-serif;
+      	animation: changeColor 5s ease-in-out infinite;
+      }
+      @keyframes changeColor {
+      	0% {
+      		color: #cccccc;
+      	}
+      	25% {
+      		color: #fc5353;
+      	}
+      	50% {
+      		color: #befc53;
+      	}
+      	75% {
+      		color: #fc53c6;
+      	}
+      	100% {
+      		color: #cccccc;
+      	}
       }
 
       /* width */
       ::-webkit-scrollbar {
         width: 0px;
       }
-
-      .main-container {
-        max-width: 1000px;
-        width: 100%;
-        position: relative;
-        padding-right: 100px;
-        padding-left: 100px;
-      }
-
-      .container-centerer {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      @media screen and (max-width: 1000px) {
-        .main-container {
-          padding-right: 60px;
-          padding-left: 60px;
-        }
-      }
-
-      @media screen and (max-width: 600px) {
-        .main-container {
-          padding-right: 30px;
-          padding-left: 30px;
-        }
-      }
-
-      .topic-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
-      .topic {
-        padding: 30px;
-        width: 100%;
-        max-width: 1000px;
-      }
-
-      .topic > .heading {
-        word-break: break-word;
-      }
-      .desc {
-        margin-top: 5px;
-        margin: 10px 0;
-        color: #57606f;
-      }
-      a.hacking {
-        color: #ee1264;
-        font-weight: bold;
-        text-decoration: none;
-        display: inline-block;
-        margin-bottom: 2px;
-        margin-top: 10px;
-      }
-      a.hacking:hover {
-        text-decoration: none;
-        border-bottom: 2px solid #ee1264;
-        margin-bottom: 0px;
-      }
-      .credit {
-        color: #fff;
-        width: 100%;
-        padding: 20px 20px;
-        display: flex;
-        justify-content: center;
-        background-color: #2c3e50;
-      }
-
-      .game {
-        margin-bottom: 40px;
-        background: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px;
-      }
-      .game .author {
-        color: #ee1264;
-      }
-      .game h3 {
-        color: #2c3e50;
-        text-decoration: none;
-        display: inline-block;
-      }
-      .game .head {
-        display: flex;
-        margin-bottom: 2px;
-        width: 100%;
-        max-width: max-content;
-
-        word-break: break-word;
-      }
-      .game > .head:hover {
-        text-decoration: none;
-        margin-bottom: 0px;
-      }
-
-      .game p {
-        margin-top: 5px;
-      }
-
-      .game > .head:hover .play-keyword {
-        width: 80px;
-      }
-
-      .game > .head .play-keyword {
-        white-space: nowrap;
-        width: 0px;
-        transition: 0.3s;
-        overflow: hidden;
-        display: inline-block;
-        font-weight: 500;
-      }
-
       #scroll-progress-bar {
         height: 5px;
         background-color: #f67d04;
         position: fixed;
         top: 0px;
       }
-
-      #banner {
-        width: 100%;
-        padding: 50px 0px;
-        background: #1168f8;
-        background-blend-mode: screen;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: center;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px;
-      }
-
-      .banner-content {
-        max-width: 1000px;
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 10px;
-        padding-right: 30px;
-        padding-left: 30px;
-      }
-
-      .banner-title {
-        font-size: 72px;
-        color: #fff;
-        margin-bottom: 10px;
-        word-break: break-word;
-      }
-
-      .banner-description {
-        font-size: 18px;
-        color: #f1f2f6;
-      }
     </style>
   </head>
   <body>
-    <div id="banner">
-      <div class="banner-content">
-        <div class="banner-title">Thai Joke Collection</div>
-        <div class="banner-description">Project นี้ถูกสร้างขึ้นมาสำหรับคนที่เข้าร่วม Workshop "Begin your Open-source Journey" ในกิจกรรม Hacktoberfest Thailand 2020 ที่จัดขึ้นในวันที่ 17 Oct 2020</div>
+    <div class="banner">
+      <div class="container">
+        <h1>Thai Joke Collection</h1>
+        <p>Project นี้ถูกสร้างขึ้นมาสำหรับคนที่เข้าร่วม Workshop "Begin your Open-source Journey" ในกิจกรรม Hacktoberfest Thailand 2020 ที่จัดขึ้นในวันที่ 17 Oct 2020</p>
       </div>
     </div>
-    <div class="container-centerer">#include-template</div>
-    <div class="credit">Made with ❤️ by NoobProgrammer Thailand Community</div>
+    <div class="container">#include-template</div>
 
     <div id="scroll-progress-bar"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
